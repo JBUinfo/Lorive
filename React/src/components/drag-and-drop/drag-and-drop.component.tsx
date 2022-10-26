@@ -49,7 +49,7 @@ const DragAndDrop = (): JSX.Element => {
     setDragging(false)
     const files = Array.from(e.dataTransfer.files)
     files.forEach(async(file)=>{
-      const resJSON = await uploadFilesResquest(file)
+      const resJSON = await uploadFilesResquest(path, file)
       if(200 === resJSON.code){
         const newData = await getFilesResquest(path)
         if(newData.code === 200){

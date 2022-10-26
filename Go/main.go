@@ -41,6 +41,7 @@ func createFolder(path string) uint32 {
 func saveFileHandler(c *gin.Context) {
 	c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 	file, err := c.FormFile("upload")
+	newPath := c.PostForm("path")
 
 	// The file cannot be received.
 	if err != nil {
@@ -52,7 +53,7 @@ func saveFileHandler(c *gin.Context) {
 	}
 
 	// The file is received, so let's save it
-	if err := c.SaveUploadedFile(file, root_path+"/"+file.Filename); err != nil {
+	if err := c.SaveUploadedFile(file, root_path+"/"+newPath+"/"+file.Filename); err != nil {
 		c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{
 			"code":    500,
 			"message": "Unable to save the file",

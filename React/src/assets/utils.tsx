@@ -16,9 +16,12 @@ export const getFilesResquest = async (_path: string) => {
     return resJSON
 }
 
-export const uploadFilesResquest = async (file: File) => {
+export const uploadFilesResquest = async (_path: string, file: File) => {
     const formData = new FormData()
     formData.append("upload", file);
+    formData.append("path", _path);
+    console.log(_path);
+    
     const res = await fetch(`${URL}/save-file`, {  body: formData, method: "post" });
     const resJSON = await res.json()
     return resJSON
