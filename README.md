@@ -28,7 +28,7 @@ And after that:
     or
     Build: npm run build
 
-![alt text](https://github.com/JBUinfo/sort-lines-in-files/blob/main/Images/example1.png?raw=true)
+![alt text](https://github.com/JBUinfo/Lorive/blob/main/Images/example1.png?raw=true)
 
 Open folders with double click
-![alt text](https://github.com/JBUinfo/sort-lines-in-files/blob/main/Images/example2.png?raw=true)
+![alt text](https://github.com/JBUinfo/Lorive/blob/main/Images/example2.png?raw=true)
