@@ -2,7 +2,7 @@
 This is something like a NAS or Google Drive but in your LAN network. Everything goes throught HTTP, React and Go.
 *I have created this project in ~21hours just for fun so it has some lacks.*
 
-#GO
+# GO
 A single server file which creates the "ROOT_LORIVE" folder. Its not securiced so its vulnerable to Path Traversal attack.
 To run it, just execute main.exe or build main.go nad execute it.
 
@@ -10,7 +10,7 @@ To run it, just execute main.exe or build main.go nad execute it.
     or
     Build: go build main.go && main.exe
     
-#React
+# React
 Simple and maybe ugly interface but works fine.
 You can:
   - Download files (one by one)
